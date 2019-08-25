@@ -40,7 +40,10 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
-
+let nav = document.querySelector('nav')
+let item1 = document.createElement('a')
+item1.innerText = 'Info'
+nav.appendChild(item1)
 let navA = document.querySelectorAll('a')
 navA[0].innerText = 'Services'
 navA[1].innerText = 'Product'
@@ -48,6 +51,9 @@ navA[2].innerText = 'Vision'
 navA[3].innerText = 'Features'
 navA[4].innerText = 'About'
 navA[5].innerText = 'Contact'
+for (let i = 0; i < navA.length; i++){
+  navA[i].style.color = 'green'
+}
 let h1 = document.querySelector('h1')
 h1.innerHTML = "DOM<br/>Is<br/>Awesome"
 let img1 = document.getElementById('cta-img')
@@ -73,4 +79,3 @@ ps[7].innerText = siteContent["contact"]['email']
 ps[8].innerText = siteContent["footer"]['copyright']
 let middle = document.getElementById('middle-img')
 middle.src = './img/mid-page-accent.jpg'
-
