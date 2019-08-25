@@ -42,15 +42,18 @@ let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 let nav = document.querySelector('nav')
 let item1 = document.createElement('a')
+let item0 = document.createElement('a')
 item1.innerText = 'Info'
+item0.innerText = 'Get Started'
 nav.appendChild(item1)
+nav.prepend(item0)
 let navA = document.querySelectorAll('a')
-navA[0].innerText = 'Services'
-navA[1].innerText = 'Product'
-navA[2].innerText = 'Vision'
-navA[3].innerText = 'Features'
-navA[4].innerText = 'About'
-navA[5].innerText = 'Contact'
+navA[1].innerText = 'Services'
+navA[2].innerText = 'Product'
+navA[3].innerText = 'Vision'
+navA[4].innerText = 'Features'
+navA[5].innerText = 'About'
+navA[6].innerText = 'Contact'
 for (let i = 0; i < navA.length; i++){
   navA[i].style.color = 'green'
 }
