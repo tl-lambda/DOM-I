@@ -40,3 +40,37 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+let navA = document.querySelectorAll('a')
+navA[0].innerText = 'Services'
+navA[1].innerText = 'Product'
+navA[2].innerText = 'Vision'
+navA[3].innerText = 'Features'
+navA[4].innerText = 'About'
+navA[5].innerText = 'Contact'
+let h1 = document.querySelector('h1')
+h1.innerHTML = "DOM<br/>Is<br/>Awesome"
+let img1 = document.getElementById('cta-img')
+img1.src = './img/header-img.png'
+let btn = document.querySelector('button')
+btn.innerText = "Get Started"
+let h4s = document.querySelectorAll('h4')
+h4s[0].innerText = "Features"
+h4s[1].innerText = "About"
+h4s[2].innerText = "Services"
+h4s[3].innerText = "Product"
+h4s[4].innerText = "Vision"
+h4s[5].innerText = "Contact"
+let ps = document.getElementsByTagName('p')
+ps[0].innerText = siteContent["main-content"]['features-content']
+ps[1].innerText = siteContent["main-content"]['about-content']
+ps[2].innerText = siteContent["main-content"]['services-content']
+ps[3].innerText = siteContent["main-content"]['product-content']
+ps[4].innerText = siteContent["main-content"]['vision-content']
+ps[5].innerText = siteContent["contact"]['address']
+ps[6].innerText = siteContent["contact"]['phone']
+ps[7].innerText = siteContent["contact"]['email']
+ps[8].innerText = siteContent["footer"]['copyright']
+let middle = document.getElementById('middle-img')
+middle.src = './img/mid-page-accent.jpg'
+
